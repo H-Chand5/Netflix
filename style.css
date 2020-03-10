@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body {
+    background-color: #000;
+}    
+/*HEADER*/
+header {
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.top {
+    display: flex;
+}
+.logo {
+    position: absolute;
+    top: 0%;
+    left: 42%;
+}
+.logo img {
+    width: 150Px;
+}
+.login a {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    font-size: 15px;
+    background-color: rgb(204, 4, 4);
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 230px;
+}
+.header-content h1 {
+    color: #fff;
+    font-size: 40px;
+}
+.header-content p {
+    color: rgb(233, 233, 233);
+    margin-top: 15px;
+    font-size: 18px;
+}
+.btn {
+    background-color: rgb(214, 0, 0);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .5)
+}
+/*TABS*/
+#tabs {
+    border-bottom: 3px solid rgb(41, 41, 41);
+}
+#tabs .container {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+#tabs .tab {
+    color: rgb(212, 212, 212);
+    margin-top: 20px;
+}
+.tab .fa {
+    font-size: 30px;
+}
+.tab p {
+    font-size: 15px;
+    padding-top: 8px;
+}
+#tabs .tab:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#tabs .tab-border {
+    border-bottom: 3px solid rgb(214, 0, 0);
+}
+/*TAB CONTENTS*/
+#tab-contents .container {
+    width: 75%;
+    margin: auto;
+}
+/*HIDE CONTENTS*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+/*CONTENT-1*/
+.tab-content-1 {
+    height: 250px;
+    margin-top: 20px; 
+}
+.content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    width: 50%;
+    float: left;
+}
+.content-inner .btn-1 {
+    text-align: center;
+}
+.content-inner p{
+    color: #fff;
+    font-weight: 600;
+}
+.img {
+    width: 50%;
+    float: right;
+}
+.tab-content-1 img {
+    width: 100%;
+}
+/*CONTENT-2*/
+.tab-content-2 .top {
+    justify-content: space-around;
+    margin-top: 20px;  
+}
+.top p {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.top .btn-2 {
+    font-size: 13px;
+    padding: 4px 20px; 
+    text-align: center;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 30px;
+    text-align: center;
+}
+.bottom img {
+    width: 100%;
+}
+.bottom p {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.bottom p2 {
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+}
+/*CONTENT-3*/
+.content-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.content-top p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.content-top .btn-3 {
+    font-size: 15px;
+    text-align: center;
+    width:180px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 4px 10px; 
+}
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+}
+.table thead th {
+    text-transform: uppercase;
+    padding: .8rem;
+}
+.table tbody tr td {
+   color: rgb(146, 146, 146);
+   padding: .5rem 1.3rem;
+   text-align: center;
+}
+.table tbody tr td:first-child {
+    text-align: left;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #222;
+}
+/*FOOTER*/
+#footer {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+#footer p {
+    color: rgb(196, 196, 196);
+}
+#footer .footer-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem; 
+    margin-top: 25px;
+}
+#footer li {
+    list-style: none;
+}
+#footer a {
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+    font-size: 13px;
+}
+#footer a:hover {
+    color: #fff;
+    transition: .5s ease;
+}
+/*Responsive Requirements*/
+@media screen and (max-width: 750px) {
+    .logo {
+        left: 2%;
+    }
+}
+@media screen and (max-width: 700px) {
+    header {
+        height: 70vh;
+    }
+    #tab-2-content .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .table tbody tr td {
+        padding: 4px 4px;
+    }
+    .table {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #tabs .text {
+        font-size: 10px;
+    }
+    #tab-1-content .text{
+        font-size: 12px;
+    }
+    #tab-2-content .text {
+        font-size: 13px;
+    }
+    #tab-2-content p2 {
+        font-size: 11px;
+        line-height: 1px;
+    }
+    #tab-3-content .text{
+        font-size: 15px;
+    }
+    .btn-1{
+        font-size:12px;
+        padding: 5px 5px;
+    }
+    #tab-2-content .btn-2 {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    #tab-3-content .btn-3 {
+        font-size: 12px;
+        width: 140px;
+    }
+    .tab-content-1 {
+        height: 150px;
+    }
+    #footer .footer-cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer a {
+        font-size: 12px;
+    }
+}
